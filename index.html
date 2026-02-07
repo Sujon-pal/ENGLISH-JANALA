@@ -1,13 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+
+    <!-- DaisyUI + Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body class="pt-20">
+    <!-- space for fixed navbar -->
+
+    <header>
+      <nav>
+        <div
+          class="navbar bg-base-100 fixed top-0 w-full z-50 border-b shadow-sm"
+        >
+          <!-- LEFT : Logo + Brand -->
+          <div class="navbar-start ml-10 flex items-center gap-2">
+            <p class="font-bold">ENGLISH</p>
+            <img class="w-[30px] h-[30px]" src="assets/logo.png" alt="Logo" />
+            <p class="font-bold">JANALA</p>
+          </div>
+
+          <!-- RIGHT : Buttons -->
+          <div class="navbar-end gap-2 mr-10">
+            <!-- FAQ -->
+            <a
+              href="#faq"
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+            >
+              <i class="fa-solid fa-question"></i>
+              FAQ
+            </a>
+
+            <!-- Learn -->
+            <a
+              href="#vocabulary"
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+            >
+              <i class="fa-brands fa-leanpub"></i>
+              Learn
+            </a>
+
+            <!-- Logout -->
+            <button
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+            >
+              <i class="fa-solid fa-right-from-bracket"></i>
+              Logout
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SECTIONS -->
+    <section id="vocabulary" class="min-h-screen p-10">
+      <h1 class="text-3xl font-bold">Vocabulary Section</h1>
+    </section>
+
+    <section id="faq" class="min-h-screen p-10">
+      <h1 class="text-3xl font-bold">FAQ Section</h1>
+    </section>
+  </body>
 </html>
