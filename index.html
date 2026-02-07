@@ -22,38 +22,61 @@
     <header>
       <nav>
         <div
-          class="navbar bg-base-100 fixed top-0 w-full z-50 border-b shadow-sm"
+          class="navbar bg-slate-100 fixed top-0 w-full z-50 border-b shadow-sm"
         >
           <!-- LEFT : Logo + Brand -->
-          <div class="navbar-start ml-10 flex items-center gap-2">
+          <div class="navbar-start ml-4 lg:ml-10 flex items-center gap-2">
             <p class="font-bold">ENGLISH</p>
             <img class="w-[30px] h-[30px]" src="assets/logo.png" alt="Logo" />
             <p class="font-bold">JANALA</p>
           </div>
 
-          <!-- RIGHT : Buttons -->
-          <div class="navbar-end gap-2 mr-10">
-            <!-- FAQ -->
+          <!-- MOBILE MENU -->
+          <div class="navbar-end lg:hidden mr-4">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost">
+                <i class="fa-solid fa-bars text-xl"></i>
+              </label>
+
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-44"
+              >
+                <li>
+                  <a href="#faq"> <i class="fa-solid fa-question"></i> FAQ </a>
+                </li>
+                <li>
+                  <a href="#vocabulary">
+                    <i class="fa-brands fa-leanpub"></i> Learn
+                  </a>
+                </li>
+                <li>
+                  <a> <i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- DESKTOP MENU -->
+          <div class="navbar-end gap-2 mr-10 hidden lg:flex">
             <a
               href="#faq"
-              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white flex items-center gap-2"
             >
               <i class="fa-solid fa-question"></i>
               FAQ
             </a>
 
-            <!-- Learn -->
             <a
               href="#vocabulary"
-              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white flex items-center gap-2"
             >
               <i class="fa-brands fa-leanpub"></i>
               Learn
             </a>
 
-            <!-- Logout -->
             <button
-              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-500 hover:text-white flex items-center gap-2"
+              class="btn btn-sm bg-transparent border border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white flex items-center gap-2"
             >
               <i class="fa-solid fa-right-from-bracket"></i>
               Logout
@@ -61,15 +84,66 @@
           </div>
         </div>
       </nav>
+      <section id="banner" class="lg:mx-10 lg:flex lg:gap-30">
+        <!-- Left Side content -->
+        <div class="lg:w-1/2 lg:my-auto mx-3">
+          <h1 class="font-bold text-3xl mb-4">
+            <span class="text-sky-500">English</span> is Easy!!
+          </h1>
+          <p class="text-gray-600 lg:text-base text-sm font-semibold">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            আপনার দক্ষতা বাড়াতে চান, আমাদের
+            <span class="text-sky-500">Interactive Lessons</span> আপনাকে নিয়ে
+            যাবে অন্য একটি Level এ
+          </p>
+          <input
+            type="text"
+            placeholder="Enter You Name"
+            class="input mt-7 mb-3 border-2 border-gray-300 focus:outline-none focus:border-blue-800"
+          /><br />
+          <input
+            type="password"
+            class="input validator mb-2 border-2 border-gray-300 focus:outline-none focus:border-blue-800"
+            required
+            placeholder="Enter PIN"
+          />
+          <br />
+          <button
+            class="btn btn-active btn-primary hover:bg-transparent hover:text-blue-800 font-semibold mt-3"
+          >
+            Get Started
+          </button>
+        </div>
+        <!-- Right Side content -->
+        <div class="lg:w-1/2">
+          <img
+            class="lg:w-[550] lg:h-[550px] object-cover overflow-hidden"
+            src="assets/hero-student.png"
+            alt=""
+          />
+        </div>
+      </section>
     </header>
 
-    <!-- SECTIONS -->
-    <section id="vocabulary" class="min-h-screen p-10">
-      <h1 class="text-3xl font-bold">Vocabulary Section</h1>
+    <!-- Let's Learn Vocabularies Section -->
+    <section id="vocabulary" class="min-h-screen lg:pt-10">
+      <h1 class="text-3xl font-bold mx-auto text-center mt-20">
+        <span class="text-sky-400">Let's</span> Learn Vocabularies
+      </h1>
+
+      <!-- button div -->
+      <div id="all-btn-container" class="flex gap-3 items-center justify-center mt-10 flex-wrap mx-auto">
+      </div>
+      <div class="text-center w-11/12 mx-auto bg-amber-50 mt-10 py-15 rounded-2xl">
+        <p>আপনি এখনো কোন Lesson Select করেন ন</p>
+        <h1>একটি Lesson Select করুন।</h1>
+      </div>
     </section>
 
-    <section id="faq" class="min-h-screen p-10">
+    <!-- <section id="faq" class="min-h-screen p-10">
       <h1 class="text-3xl font-bold">FAQ Section</h1>
-    </section>
+    </section>  -->
+
+    <script src="script/fetchBtn.js"></script>
   </body>
 </html>
