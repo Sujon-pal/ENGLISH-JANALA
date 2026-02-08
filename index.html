@@ -137,7 +137,7 @@
         id="all-btn-container"
         class="flex gap-3 items-center justify-center mt-10 flex-wrap mx-auto"
       ></div>
-      <div
+      <div id="lesson-message"
         class="text-center w-11/12 mx-auto bg-amber-50 lg:mt-10 mt-8 lg:py-15 py-10 rounded-2xl"
       >
         <p class="text-xs text-gray-600">আপনি এখনো কোন Lesson Select করেন ন</p>
@@ -145,10 +145,15 @@
           একটি <span class="text-sky-600">Lesson</span> Select করুন।
         </h1>
       </div>
+      <div
+  id="words-container"
+  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-11/12 mx-auto mt-10"
+></div>
+
     </section>
 
     <!-- Frequently Asked Questions -->
-    <section id="faq" class="lg:min-h-screen ">
+    <section id="faq" class="lg:min-h-screen">
       <div class="h-[30px]"></div>
       <h1 class="text-3xl font-bold text-center">
         <span class="text-sky-400">Frequently</span> Asked Questions
@@ -232,10 +237,14 @@
       </div>
     </section>
     <!-- Footer Section -->
-    <footer class="lg:flex items-center justify-between bg-amber-100 px-10  rounded-t-3xl ">
+    <footer
+      class="lg:flex items-center justify-between bg-amber-100 px-10 rounded-t-3xl"
+    >
       <!-- Rignt side content -->
-      <div class="lg:py-10 py-5  text-center sm:text-left ">
-        <div class="flex items-center justify-center sm:justify-start gap-2 py-4  ">
+      <div class="lg:py-10 py-5 text-center sm:text-left">
+        <div
+          class="flex items-center justify-center sm:justify-start gap-2 py-4"
+        >
           <p class="font-bold">English</p>
           <img class="w-[30px] h-[30px]" src="assets/logo.png" alt="" />
           <p class="font-bold">জানালা</p>
@@ -254,12 +263,13 @@
           <i
             class="fa-brands fa-instagram hover:text-pink-500 cursor-pointer"
           ></i>
-          <i
-            class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer"
-          ></i>
+          <a href="https://www.linkedin.com/in/sujon-pal-90353124a/" target="_blank"><i
+            class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer" 
+          ></i></a>
         </div>
       </div>
     </footer>
+    <script src="script/showDada.js"></script>
     <script src="script/fetchBtn.js"></script>
   </body>
 </html>
