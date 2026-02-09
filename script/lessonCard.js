@@ -6,7 +6,7 @@ function loadLessonCard(levelNo) {
   lessonMessage.innerHTML = "";
   wordsContainer.innerHTML = "";
 
-  // যেকোন button click এ initial message hide
+  
   lessonMessage.classList.add("hidden");
 
   fetch("https://openapi.programming-hero.com/api/words/all")
@@ -36,7 +36,7 @@ function loadLessonCard(levelNo) {
       // Words show
       filterCard.forEach(card => {
         const div = document.createElement("div");
-        div.className = "p-4 border rounded-lg shadow-sm mb-3";
+        div.className = "p-4 border rounded-lg shadow-sm mb-3 bg-slate-50";
 
         div.innerHTML = `
           <h2 class="text-xl font-bold">${card.word}</h2>
