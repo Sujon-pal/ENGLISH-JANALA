@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ENGLISH জানালা</title>
 
     <!-- DaisyUI + Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
@@ -137,7 +137,8 @@
         id="all-btn-container"
         class="flex gap-3 items-center justify-center mt-10 flex-wrap mx-auto"
       ></div>
-      <div id="lesson-message"
+      <div
+        id="lesson-message"
         class="text-center w-11/12 mx-auto bg-amber-50 lg:mt-10 mt-8 lg:py-15 py-10 rounded-2xl"
       >
         <p class="text-xs text-gray-600">আপনি এখনো কোন Lesson Select করেন ন</p>
@@ -146,10 +147,9 @@
         </h1>
       </div>
       <div
-  id="words-container"
-  class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 w-11/12 mx-auto mt-10"
-></div>
-
+        id="words-container"
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-4 w-11/12 mx-auto mt-10"
+      ></div>
     </section>
 
     <!-- Frequently Asked Questions -->
@@ -263,13 +263,19 @@
           <i
             class="fa-brands fa-instagram hover:text-pink-500 cursor-pointer"
           ></i>
-          <a href="https://www.linkedin.com/in/sujon-pal-90353124a/" target="_blank"><i
-            class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer" 
-          ></i></a>
+          <a
+            href="https://www.linkedin.com/in/sujon-pal-90353124a/"
+            target="_blank"
+            ><i
+              class="fa-brands fa-linkedin hover:text-blue-700 cursor-pointer"
+            ></i
+          ></a>
         </div>
       </div>
     </footer>
-    <script src="script/showDada.js"></script>
+    <script src="script/fetchData.js"></script>
+    <script src="script/lessonCard.js"></script>
+    <script src="script/filterData.js"></script>
     <script src="script/fetchBtn.js"></script>
   </body>
 </html>
